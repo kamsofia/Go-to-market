@@ -6,7 +6,8 @@
 - **Surface 3, copy variation:** Social post: "Group chat: 47 unread messages.
 Roamly Groups: 1 shared plan, dates synced, everyone's paid their share.
 Plan your next family trip the easy way. 🧳"
-- **Strongest variation → visual asset (link / screenshot):** https://product-school.slack.com/files/U0AHPC0R99Q/F0C3XKJ9VCY/image.png
+- **Strongest variation → visual asset (link / screenshot):** <img width="1254" height="1254" alt="image (2)" src="https://github.com/user-attachments/assets/b3e5d307-83ac-4003-890a-c6391bd512b8" />
+
 
 ## Show and swap a messaging asset
 - **Who do you think this is built for?:** _(not filled in)_
