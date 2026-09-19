@@ -3,9 +3,7 @@
 ## Responses
 - **Surface 1, copy variation:** In-app notification: "Planning a trip with the whole family? Get everyone's dates, payments, and preferences in one place."
 - **Surface 2, copy variation:** Email subject line: "Next time you're planning a trip with family, try this"
-- **Surface 3, copy variation:** Social post: "Group chat: 47 unread messages.
-Roamly Groups: 1 shared plan, dates synced, everyone's paid their share.
-Plan your next family trip the easy way. 🧳"
+- **Surface 3, copy variation:** Social post: "One shared plan. Everyone's paid. Trip booked. 82% of families plan their next trip together within 4 months."
 - **Strongest variation → visual asset (link / screenshot):** <img width="1254" height="1254" alt="image (2)" src="https://github.com/user-attachments/assets/b3e5d307-83ac-4003-890a-c6391bd512b8" />
 
 
