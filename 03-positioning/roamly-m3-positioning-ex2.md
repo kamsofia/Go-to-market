@@ -1,0 +1,11 @@
+# Roamly Groups · Positioning Framework & Statement, Module 3 (Exercise 2)
+
+## Responses
+- **Your final positioning statement:** Roamly Groups is a shared trip planner for extended families — cutting the organizer's coordination work across households, and turning the finished plan into a real experience booked through Roamly's marketplace of vetted local experts.
+
+## Show and swap your statement
+- **Who specifically is this for, could you describe the target person in your own words, without using the words in the statement?:** Picture the person in a multi-generational family who always ends up running point on the group vacation — the aunt, sibling, or adult child who's fielding a dozen separate text threads with grandparents, cousins, and in-laws, each with different mobility needs, budgets, and opinions about where to stay. They're not a professional trip planner; they're just the one who got voluntold because they're organized, or because nobody else will do it. Their real headache isn't picking destinations — it's herding opinions across households that don't talk to each other directly, chasing down who's paid for what, and reconciling "grandma can't do stairs" with "the teenagers want to go zip-lining."
+- **What value does this deliver, what specifically gets better for the person it’s for?:** Coordination overhead drops. Instead of relaying updates household-by-household ("okay so Uncle Dave is in, but Sarah's family needs the dates to shift"), everyone sees and edits one shared plan directly — the organizer stops being a human relay switch.
+Decisions surface faster. With input visible in one place instead of scattered across texts, emails, and calls, conflicts (dates, budget, activity levels) show up early instead of two weeks before departure.
+Planning turns into something bookable. The plan doesn't die as a spreadsheet or a thread nobody re-reads — it converts into actual reservations with vetted local operators, so the organizer isn't also separately vetting tour guides or chasing quotes.
+Trust is outsourced. "Vetted" local experts mean the organizer doesn't have to personally research and gamble on unknown vendors for 15 people's vacation — that risk is pre-screened.
