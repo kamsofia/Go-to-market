@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Roamly Groups · Go-To-Market Plan</title>
+<style>
+:root{--bg:#07162C;--bg2:#0d2240;--line:#1e3a63;--text:#c9d6ea;--head:#fff;--accent:#3b82f6;--accent2:#93c5fd;--warn:#fbbf24}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-snap-type:y proximity;scroll-behavior:smooth;background:var(--bg)}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.5;-webkit-font-smoothing:antialiased}
+#bar{position:fixed;top:0;left:0;height:3px;width:0;background:var(--accent);z-index:20;transition:width .15s}
+#dots{position:fixed;right:18px;top:50%;transform:translateY(-50%);display:flex;flex-direction:column;gap:12px;z-index:20}
+#dots a{width:10px;height:10px;border-radius:50%;border:1.5px solid var(--accent2);opacity:.5;transition:.2s;display:block}
+#dots a.on{background:var(--accent);border-color:var(--accent);opacity:1;transform:scale(1.3)}
+section{min-height:100vh;scroll-snap-align:start;display:flex;flex-direction:column;justify-content:center;padding:72px 72px 56px 56px;max-width:1280px;margin:0 auto;position:relative}
+.tag{font:600 12px/1 ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.14em;text-transform:uppercase;color:var(--accent2);margin-bottom:14px}
+h1{font-size:clamp(38px,6vw,76px);line-height:1.04;color:var(--head);letter-spacing:-.02em;font-weight:800}
+h1 em{font-style:normal;color:var(--accent)}
+h2{font-size:clamp(28px,3.8vw,46px);line-height:1.1;color:var(--head);letter-spacing:-.015em;font-weight:750;margin-bottom:10px}
+h2 em{font-style:normal;color:var(--accent)}
+h3{font-size:13px;font-family:ui-monospace,Menlo,monospace;letter-spacing:.12em;text-transform:uppercase;color:var(--accent2);margin-bottom:10px;font-weight:600}
+.lead{font-size:clamp(16px,1.6vw,20px);color:var(--text);max-width:880px;margin-bottom:26px}
+.grid{display:grid;gap:18px}
+.g2{grid-template-columns:repeat(2,1fr)}.g3{grid-template-columns:repeat(3,1fr)}.g4{grid-template-columns:repeat(4,1fr)}
+.card{background:var(--bg2);border:1px solid var(--line);border-radius:14px;padding:20px 22px}
+.card.hi{border-color:var(--accent);box-shadow:0 0 0 1px var(--accent) inset}
+.card p,.card li{font-size:15px}
+ul{list-style:none}
+li{padding-left:18px;position:relative;margin-bottom:7px}
+li:before{content:"";position:absolute;left:0;top:.62em;width:7px;height:7px;border-radius:2px;background:var(--accent)}
+b,strong{color:var(--head);font-weight:650}
+.quote{font-size:clamp(20px,2.4vw,30px);line-height:1.3;color:var(--head);font-weight:600;border-left:4px solid var(--accent);padding:6px 0 6px 22px;margin:6px 0 22px;max-width:980px}
+.pill{display:inline-block;font:600 12px/1 ui-monospace,Menlo,monospace;padding:6px 10px;border-radius:99px;background:rgba(59,130,246,.15);color:var(--accent2);margin:0 6px 6px 0}
+.note{font-size:12.5px;color:#8ea3c4;margin-top:10px}
+.flow{display:grid;grid-template-columns:1fr auto 1fr;gap:16px;align-items:stretch}
+.arrow{align-self:center;font-size:30px;color:var(--accent)}
+.risk{border-color:var(--warn);background:rgba(251,191,36,.07)}
+.risk h3{color:var(--warn)}
+.fade{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
+.fade.in{opacity:1;transform:none}
+.foot{position:absolute;left:56px;bottom:22px;font:11px ui-monospace,Menlo,monospace;color:#6c84a8;letter-spacing:.1em}
+@media(max-width:900px){section{padding:64px 22px 56px}.g2,.g3,.g4{grid-template-columns:1fr}.flow{grid-template-columns:1fr}.arrow{transform:rotate(90deg);justify-self:center}#dots{right:8px;gap:9px}.foot{left:22px}}
+@media(prefers-reduced-motion:reduce){.fade{transition:none;opacity:1;transform:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div id="bar"></div>
+<nav id="dots" aria-label="Slides"></nav>
+
+<!-- 1 TITLE -->
+<section id="s1">
+  <div class="tag fade">Go-To-Market · Module 6 · Capstone</div>
+  <h1 class="fade">Roamly <em>Groups</em><br>Go-To-Market Plan</h1>
+  <p class="lead fade" style="margin-top:24px">One shared plan for extended-family trips, from coordination to a booked experience, inside Roamly.</p>
+  <div class="fade"><span class="pill">Hybrid PLG + CLG</span><span class="pill">Goal: Retain</span><span class="pill">Segment: extended families</span></div>
+  <p class="note fade" style="margin-top:28px">Kamelia Koleva · Product School GTM Certification</p>
+  <div class="foot">SCROLL ↓</div>
+</section>
+
+<!-- 2 GTM STRATEGY -->
+<section id="s2">
+  <div class="tag fade">01 · GTM Strategy</div>
+  <h2 class="fade">Win the <em>organizer</em>, not the whole group</h2>
+  <div class="grid g3 fade">
+    <div class="card">
+      <h3>Segment</h3>
+      <ul>
+        <li><b>Extended family trips</b>: multiple households, grandparents to cousins</li>
+        <li>Each household pays its own share, unevenly</li>
+        <li>Recurs around reunions and holidays</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Motion &amp; goal</h3>
+      <ul>
+        <li><b>Hybrid:</b> PLG primary (invite inside a trip, fast time-to-value)</li>
+        <li><b>CLG secondary:</b> families recommend it to other family groups</li>
+        <li><b>Goal: Retain</b> existing Roamly travelers hitting a wall</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Channel &amp; metric</h3>
+      <ul>
+        <li>Existing users with booking history and prior group drop-off</li>
+        <li>Prompt directly: "planning a trip with others? try Groups"</li>
+        <li><b>Metric:</b> organizer repeat-organize rate, not full-group adoption</li>
+      </ul>
+    </div>
+  </div>
+  <div class="quote fade" style="margin-top:22px;font-size:clamp(17px,1.8vw,22px)">For Roamly's existing travelers who already coordinate group trips manually, Roamly Groups reduces the organizer's burden immediately, even if not everyone fully adopts it.</div>
+  <div class="grid g3 fade">
+    <div class="card"><h3>Key message 1</h3><p><b>Less coordination, not perfect coordination.</b> Any adoption beats today's manual work.</p></div>
+    <div class="card"><h3>Key message 2</h3><p><b>You stay in control</b> without doing it all manually: sync and split in one place, with fallback for holdouts.</p></div>
+    <div class="card"><h3>Key message 3</h3><p><b>Built for the trip you're already planning.</b></p></div>
+  </div>
+</section>
+
+<!-- 3 COMPETITIVE INTEL & BET -->
+<section id="s3">
+  <div class="tag fade">02 · Competitive Intel &amp; Strategic Bet</div>
+  <h2 class="fade">Coordination is free. <em>Booking</em> is the moat.</h2>
+  <div class="grid g2 fade">
+    <div class="card">
+      <h3>Battlecard · TripProf</h3>
+      <ul>
+        <li><b>Offer:</b> all-in-one trip planner: itinerary, multi-currency splitting, checklists, documents, offline. No booking layer.</li>
+        <li><b>Positioning:</b> "A whole trip, not just the bill"; family-trip and reunion playbook</li>
+        <li><b>Pricing:</b> freemium + credits (€3.99/credit, Pro €7.99/mo); collaboration is paywalled</li>
+        <li><b>Why the biggest threat:</b> already owns the multi-household family framing and has a live monetization engine</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>The insight</h3>
+      <ul>
+        <li>TripProf wins by <b>monetizing content</b>, not transactions</li>
+        <li>So coordination was never Roamly's moat</li>
+        <li><b>Roamly's edge:</b> free default coordination paired with a marketplace of vetted, bookable local experiences</li>
+        <li><b>Biggest threat:</b> if booking doesn't happen in the same flow, Groups is a free feature with nothing to show for it</li>
+      </ul>
+    </div>
+  </div>
+  <div class="card hi fade" style="margin-top:18px">
+    <h3>The bet</h3>
+    <p style="font-size:clamp(16px,1.7vw,20px);color:var(--head)">Roamly Groups wins by keeping the shared itinerary and the experience marketplace <b>connected, not separate</b>, so booking happens inside the plan the family is already coordinating in.</p>
+  </div>
+  <div class="card fade" style="margin-top:14px">
+    <h3>Deprioritizing</h3>
+    <p>Packing checklists, document storage, offline mode, general destination content. The itinerary stays: it is what connects coordination to a booking.</p>
+  </div>
+</section>
+
+<!-- 4 POSITIONING -->
+<section id="s4">
+  <div class="tag fade">03 · Positioning</div>
+  <h2 class="fade">From <em>plan</em> to a booked experience</h2>
+  <div class="quote fade">Roamly Groups is a shared trip planner for extended families, cutting the organizer's coordination work across households and turning the finished plan into a real experience booked through Roamly's marketplace of vetted local experts.</div>
+  <div class="grid g3 fade">
+    <div class="card"><h3>For</h3><p>Existing Roamly travelers organizing a multi-household extended family trip</p></div>
+    <div class="card"><h3>We offer</h3><p>One shared plan replacing separate accounts, spreadsheets and manual payment splitting</p></div>
+    <div class="card"><h3>Because of</h3><p>Less coordination work for the organizer from day one, even if not every household fully adopts</p></div>
+    <div class="card"><h3>Who want</h3><p>To coordinate and book as a group on Roamly without separate accounts or workarounds</p></div>
+    <div class="card"><h3>Despite</h3><p>Not matching the planning depth of legacy tools</p></div>
+    <div class="card"><h3>Better than</h3><p>Planning tools that only help you plan; Roamly turns the plan into a booked experience</p></div>
+  </div>
+  <div class="grid g4 fade" style="margin-top:18px">
+    <div class="card"><p><b>Less overhead.</b> One shared plan, no human relay switch.</p></div>
+    <div class="card"><p><b>Faster decisions.</b> Conflicts surface early.</p></div>
+    <div class="card"><p><b>Bookable.</b> The plan converts into reservations.</p></div>
+    <div class="card"><p><b>Trust.</b> Vetted local experts are pre-screened.</p></div>
+  </div>
+</section>
+
+<!-- 5 MESSAGING -->
+<section id="s5">
+  <div class="tag fade">04 · Messaging</div>
+  <h2 class="fade">One audience, <em>one</em> promise: the Organizer</h2>
+  <div class="flow fade">
+    <div class="card">
+      <h3>From</h3>
+      <p>A family that books on Roamly individually hits a wall together: separate bookings per household, chasing relatives for who's paying, manual date checks. The plan ends up in a spreadsheet or group chat.</p>
+    </div>
+    <div class="arrow">→</div>
+    <div class="card hi">
+      <h3>To</h3>
+      <p>The same family plans and books together, as one group, inside Roamly, turning the plan into real booked experiences without leaving the product.</p>
+    </div>
+  </div>
+  <div class="grid g3 fade" style="margin-top:18px">
+    <div class="card"><h3>Value prop</h3><p><b>Less coordination work, from day one.</b> Plan and book as one group without chasing every household.</p></div>
+    <div class="card">
+      <h3>Capabilities</h3>
+      <ul>
+        <li>Shared itinerary across households</li>
+        <li>In-app split payments</li>
+        <li>Synced availability</li>
+        <li>Book real experiences from the plan</li>
+      </ul>
+    </div>
+    <div class="card"><h3>Evidence</h3><p><b>82%</b> of organizers who tried Groups organized a second family trip within 4 months.</p><p class="note">Illustrative figure for the exercise, not measured data.</p></div>
+  </div>
+  <div class="grid g2 fade" style="margin-top:18px">
+    <div class="card"><h3>In-app notification</h3><p>"Planning a trip with the whole family? Get everyone's dates, payments, and preferences in one place."</p></div>
+    <div class="card"><h3>Email subject line</h3><p>"Next time you're planning a trip with family, try this"</p></div>
+  </div>
+</section>
+
+<!-- 6 PRICING -->
+<section id="s6">
+  <div class="tag fade">05 · Pricing Recommendation</div>
+  <h2 class="fade">Planning is free. <em>Booking</em> carries a small fee.</h2>
+  <div class="grid g3 fade">
+    <div class="card">
+      <h3>Model &amp; goal</h3>
+      <ul>
+        <li><b>Transaction-based:</b> small fee on the booking, shown as its own line at checkout</li>
+        <li>Goal: more family groups planning and booking on Roamly; easy to try, easy to recommend</li>
+        <li>Families travel once or twice a year, so no monthly charge</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Who pays</h3>
+      <ul>
+        <li><b>Each household</b> pays its share of the booking and of the fee, via split payments</li>
+        <li>The organizer feels the value but doesn't carry the cost</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Packaging · by features</h3>
+      <ul>
+        <li>Everything a normal trip needs is in the default package</li>
+        <li>Booking is never blocked</li>
+        <li>One optional extra for harder trips</li>
+      </ul>
+    </div>
+  </div>
+  <div class="grid g2 fade" style="margin-top:18px">
+    <div class="card hi"><h3>Groups · default</h3><p>Shared plan, invites, split payments, synced dates, booking. Fee inside the booking, split across households. <b>Route most families here.</b></p></div>
+    <div class="card"><h3>Groups Plus · optional</h3><p>For big or tricky trips, e.g. several generations with different needs. Extra planning help plus flexible booking if a household drops out. Paid on top, per trip.</p></div>
+  </div>
+  <div class="grid g2 fade" style="margin-top:18px">
+    <div class="card">
+      <h3>Validate · in this order</h3>
+      <ul>
+        <li><b>Max-Diff:</b> which features matter and are worth paying extra for (Plus ideas vs. default)</li>
+        <li><b>Van Westendorp:</b> acceptable range for the booking fee and the Plus price, by household size and generations</li>
+      </ul>
+    </div>
+    <div class="card risk">
+      <h3>The one thing that changes everything</h3>
+      <p>That families who plan on Roamly will <b>book on Roamly</b>. Both revenue lines depend on it. If they plan here and book elsewhere, we earn nothing.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 7 INDIVIDUAL INSIGHTS -->
+<section id="s7">
+  <div class="tag fade">06 · Individual Insights</div>
+  <h2 class="fade">What this process <em>taught</em> me</h2>
+  <div class="grid g3 fade">
+    <div class="card">
+      <h3>Friction points</h3>
+      <ul>
+        <li><b>Positioning</b> was the hardest to finalize. I kept writing features instead of what the family actually gets. More examples would have helped.</li>
+        <li><b>Messaging</b> has to change depending on the audience. It took me a while to see that.</li>
+      </ul>
+    </div>
+    <div class="card hi">
+      <h3>Aha moment</h3>
+      <p style="font-size:clamp(16px,1.6vw,19px);color:var(--head)"><b>Positioning and messaging are two very different jobs.</b> It's important to split them, but you need both.</p>
+    </div>
+    <div class="card">
+      <h3>Key takeaways</h3>
+      <ul>
+        <li><b>Have a success metric that proves the bet.</b> It makes everything more concrete, and you can tell if things are working or not.</li>
+        <li><b>Follow the whole process.</b> It helped a lot. After finishing one step, the next one is so much easier.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- 8 CLOSING -->
+<section id="s8">
+  <div class="tag fade">Closing</div>
+  <h1 class="fade">One shared plan.<br><em>Booked</em> inside Roamly.</h1>
+  <div class="grid g4 fade" style="margin-top:30px">
+    <div class="card"><h3>Who</h3><p>Organizers of extended-family trips</p></div>
+    <div class="card"><h3>How</h3><p>Hybrid PLG + CLG, Retain first</p></div>
+    <div class="card"><h3>Edge</h3><p>Planning connected to a vetted marketplace</p></div>
+    <div class="card"><h3>Revenue</h3><p>Small fee on the booking; optional Plus</p></div>
+  </div>
+  <div class="card risk fade" style="margin-top:18px;max-width:760px">
+    <h3>Watch first</h3>
+    <p>Do families who plan on Roamly book on Roamly? Track organizer repeat-organize rate.</p>
+  </div>
+  <p class="note fade" style="margin-top:26px">Kamelia Koleva · Roamly Groups GTM · Module 6 Capstone</p>
+</section>
+
+<script>
+(function(){
+  var secs=[].slice.call(document.querySelectorAll('section'));
+  var dots=document.getElementById('dots'),bar=document.getElementById('bar');
+  secs.forEach(function(s,i){
+    var a=document.createElement('a');a.href='#'+s.id;a.setAttribute('aria-label','Slide '+(i+1));
+    a.addEventListener('click',function(e){e.preventDefault();s.scrollIntoView({behavior:'smooth'});});
+    dots.appendChild(a);
+  });
+  var da=[].slice.call(dots.children);
+  function upd(){
+    var h=document.documentElement,max=h.scrollHeight-innerHeight;
+    bar.style.width=(max>0?scrollY/max*100:0)+'%';
+    var cur=0,mid=scrollY+innerHeight/2;
+    secs.forEach(function(s,i){if(s.offsetTop<=mid)cur=i;});
+    da.forEach(function(d,i){d.classList.toggle('on',i===cur);});
+  }
+  addEventListener('scroll',upd,{passive:true});addEventListener('resize',upd);upd();
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.12});
+  document.querySelectorAll('.fade').forEach(function(el,i){el.style.transitionDelay=(i%4)*70+'ms';io.observe(el);});
+  addEventListener('keydown',function(e){
+    var k=e.key,cur=da.findIndex(function(d){return d.classList.contains('on');});
+    if(k==='ArrowDown'||k==='PageDown'||k===' '){if(cur<secs.length-1){e.preventDefault();secs[cur+1].scrollIntoView({behavior:'smooth'});}}
+    if(k==='ArrowUp'||k==='PageUp'){if(cur>0){e.preventDefault();secs[cur-1].scrollIntoView({behavior:'smooth'});}}
+  });
+})();
+</script>
+</body>
+</html>
